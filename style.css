@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Barlow;
+  font-weight: 500;
+  src: url("./assets/fonts/BarlowSemiCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: Barlow;
+  font-weight: 600;
+  src: url("./assets/fonts/BarlowSemiCondensed-SemiBold.ttf");
+}
+
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --medium: 500;
+  --semibold: 600;
+}
+
+html {
+  font-size: 13px;
+}
