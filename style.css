@@ -124,7 +124,7 @@ main {
 .background-image {
   background-image: url("./assets/images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
-  background-position: 90% 0%;
+  background-position: 80% 0%;
   background-size: 10.5em;
 }
 
@@ -147,4 +147,46 @@ img {
   font-size: 1.1rem;
   grid-area: title;
   color: var(--light-grayish-blue-transparent);
+}
+
+@media screen and (min-width: 30rem) {
+  main {
+    grid-template-areas:
+      "spot-1 spot-1 spot-2 spot-3"
+      "spot-4 spot-5 spot-5 spot-3";
+    gap: 2rem;
+    max-height: 56rem;
+    align-items: stretch;
+  }
+
+  .statement {
+    font-size: 1.8rem;
+  }
+
+  .spot-1 {
+    grid-area: spot-1;
+    max-height: 27rem;
+  }
+
+  .spot-2 {
+    grid-area: spot-2;
+    max-height: 27rem;
+    max-width: 25rem;
+  }
+
+  .spot-3 {
+    grid-area: spot-3;
+    max-width: 25rem;
+  }
+
+  .spot-4 {
+    grid-area: spot-4;
+    max-height: 27rem;
+    max-width: 25rem;
+  }
+
+  .spot-5 {
+    grid-area: spot-5;
+    max-height: 27rem;
+  }
 }
