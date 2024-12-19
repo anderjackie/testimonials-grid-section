@@ -57,10 +57,10 @@ main {
   padding-bottom: 3rem;
   display: grid;
   grid-template-areas:
-    "user ."
-    "statement statement"
-    "review review";
-  row-gap: 1.5rem;
+    "user"
+    "statement"
+    "review";
+  row-gap: 1.3rem;
 }
 
 .violet {
@@ -99,16 +99,16 @@ main {
 .statement {
   grid-area: statement;
   color: var(--white);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: var(--medium);
-  line-height: 2.4rem;
+  line-height: 2.3rem;
   font-weight: var(--semibold);
 }
 
 .review {
   grid-area: review;
   color: var(--light-grayish-blue-opaque);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.8rem;
 }
 
@@ -119,32 +119,35 @@ main {
     "img name"
     "img title";
   column-gap: 1.4rem;
+  justify-content: start;
 }
 
 .background-image {
   background-image: url("./assets/images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: 80% 0%;
-  background-size: 10.5em;
+  background-size: 10em;
 }
 
 img {
   border-radius: 50%;
   border: 2px solid var(--light-grayish-blue-transparent);
   grid-area: img;
-  place-self: center;
+  align-self: center;
   width: 40px;
   height: 40px;
 }
 
 .name {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--white);
   grid-area: name;
+  align-self: end;
+  justify-self: start;
 }
 
 .title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   grid-area: title;
   color: var(--light-grayish-blue-transparent);
 }
@@ -165,12 +168,12 @@ img {
 
   .spot-1 {
     grid-area: spot-1;
-    max-height: 27rem;
+    max-height: 28rem;
   }
 
   .spot-2 {
     grid-area: spot-2;
-    max-height: 27rem;
+    max-height: 28rem;
     max-width: 25rem;
   }
 
@@ -181,12 +184,17 @@ img {
 
   .spot-4 {
     grid-area: spot-4;
-    max-height: 27rem;
+    max-height: 28rem;
     max-width: 25rem;
   }
 
   .spot-5 {
     grid-area: spot-5;
-    max-height: 27rem;
+    max-height: 28rem;
+  }
+
+
+  .background-image {
+    background-position: 85% 0%;
   }
 }
